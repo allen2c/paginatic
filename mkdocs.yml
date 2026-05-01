@@ -1,0 +1,28 @@
+site_name: Paginatic
+site_description: Small Pydantic models for API pagination responses.
+site_url: https://allen2c.github.io/paginatic/
+repo_name: allen2c/paginatic
+repo_url: https://github.com/allen2c/paginatic
+
+theme:
+  name: material
+  features:
+    - navigation.sections
+    - navigation.top
+    - search.suggest
+    - search.highlight
+
+nav:
+  - Home: index.md
+  - Usage: usage.md
+  - Token Helpers: token-helpers.md
+  - API Reference: api-reference.md
+
+markdown_extensions:
+  - admonition
+  - toc:
+      permalink: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.superfences
