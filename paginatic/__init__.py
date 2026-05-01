@@ -1,6 +1,10 @@
+"""Pydantic models for common pagination response shapes."""
+
 from typing import Final, Generic, List, Literal, Optional, Text, TypeVar
 
 from pydantic import BaseModel, Field
+
+__all__ = ["Paginatic", "TokenPaginatic", "__version__"]
 
 __version__: Final[Text] = "0.1.0"
 

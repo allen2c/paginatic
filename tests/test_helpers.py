@@ -4,9 +4,13 @@ from typing import Text
 
 import pytest
 
-from paginatic.helpers import decode_and_verify, encode_and_sign
+from paginatic.helpers import __all__, decode_and_verify, encode_and_sign
 
 SECRET: Text = "test-secret"
+
+
+def test_helpers_export_public_api():
+    assert __all__ == ["decode_and_verify", "encode_and_sign"]
 
 
 def test_encode_and_sign_round_trips_payload():

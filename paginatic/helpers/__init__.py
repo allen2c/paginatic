@@ -5,11 +5,11 @@ import binascii
 import hashlib
 import hmac
 import json
-from typing import Any, Mapping, Text
+from typing import Any, Final, Mapping, Text
 
 __all__ = ["decode_and_verify", "encode_and_sign"]
 
-TOKEN_SEPARATOR: Text = "."
+TOKEN_SEPARATOR: Final[Text] = "."
 
 
 def encode_and_sign(payload: Mapping[Text, Any], secret: Text) -> Text:
